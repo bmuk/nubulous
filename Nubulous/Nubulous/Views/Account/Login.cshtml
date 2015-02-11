@@ -1,17 +1,14 @@
-﻿
-@using Nubulous.Models
+﻿@using Nubulous.Models
 @model LoginViewModel
 @{
     ViewBag.Title = "Login";
 }
 
 <h2>@ViewBag.Title</h2>
-<div class="row">
-    <div class="col-md-4">
-        <section id="socialLoginForm">
+<div class="jumbotron">
+    <section id="socialLoginForm">
             @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
-        </section>
-    </div>
+    </section>
 </div>
 
 @section Scripts {
