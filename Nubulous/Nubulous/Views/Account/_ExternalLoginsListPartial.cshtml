@@ -1,7 +1,7 @@
 ﻿@model Nubulous.Models.ExternalLoginListViewModel
 @using Microsoft.Owin.Security
 
-<h4>Connect your Google account to log in.</h4>
+<h4 class="text-center">Connect your Google account to log in.</h4>
 <hr />
 @{
     var loginProviders = Context.GetOwinContext().Authentication.GetExternalAuthenticationTypes();
@@ -16,6 +16,7 @@
     else {
         using (Html.BeginForm("ExternalLogin", "Account", new { ReturnUrl = Model.ReturnUrl })) {
             @Html.AntiForgeryToken()
+        <div class="text-center">
             <div id="socialLoginList">
                 <p>
                     @foreach (AuthenticationDescription p in loginProviders) {
@@ -23,6 +24,7 @@
                     }
                 </p>
             </div>
+        </div>
         }
     }
 }
