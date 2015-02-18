@@ -59,11 +59,11 @@ namespace Nubulous
             //   appId: "",
             //   appSecret: "");
 
-            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            {
-                ClientId = ConfigurationManager.AppSettings.Get("GOOGLE_CLIENT_ID"),
-                ClientSecret = ConfigurationManager.AppSettings.Get("GOOGLE_CLIENT_SECRET")
-            });
+            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            //{
+            //    ClientId = ConfigurationManager.AppSettings.Get("GOOGLE_CLIENT_ID"),
+            //    ClientSecret = ConfigurationManager.AppSettings.Get("GOOGLE_CLIENT_SECRET")
+            //});
         }
     }
 }
