@@ -212,6 +212,7 @@
     <Compile Include="AppFlowMetadata.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\GoogleDriveController.cs" />
+    <Compile Include="Controllers\DropBoxController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
