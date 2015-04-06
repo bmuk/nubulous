@@ -8,7 +8,7 @@ using DropboxRestAPI;
 
 namespace Nubulous.Controllers
 {
-    class Program
+    public class DropBoxController : Controller
     {
         private static void Main()
         {
