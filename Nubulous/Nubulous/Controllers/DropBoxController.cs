@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using System.Threading.Tasks;
 using DropboxRestAPI;
 
-namespace Sample
+namespace Nubulous.Controllers
 {
     class Program
     {
