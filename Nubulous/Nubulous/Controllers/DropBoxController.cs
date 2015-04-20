@@ -1,4 +1,15 @@
-﻿var options = new Options
+﻿using System;
+using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+using DropboxOAuth2Client;
+
+
+var options = new Options
     {
         ClientId = "...",
         ClientSecret = "...",
