@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Linq;
 using System.Web;
-using System.Web.Mvc;
 
-using DropboxOAuth2Client;
+using DropBoxRestAPI;
 
 
-var options = new Options
+namespace Nubulous.Controllers
+{
+    public class DropBoxController 
+    {
+        var options = new Options
     {
         ClientId = "...",
         ClientSecret = "...",
@@ -74,4 +75,6 @@ var searchResults = await client2.Core.Metadata.SearchAsync("/", file.Name);
 foreach (var searchResult in searchResults)
 {
     Console.WriteLine("Found: " + searchResult.path);
+}
+    }
 }
